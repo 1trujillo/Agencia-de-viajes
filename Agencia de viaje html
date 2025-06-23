@@ -1,0 +1,81 @@
+<!-- Vista de Login -->
+<div id="loginView" class="view active">
+    <div class="login-container">
+        <div class="logo">
+            <div class="logo-img">On Tour</div>
+        </div>
+        <h1>Bienvenido</h1>
+        <div class="form-group">
+            <label for="username">Usuario</label>
+            <input type="text" id="username" placeholder="Ingrese su nombre de usuario">
+        </div>
+        <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" placeholder="Ingrese su contraseña">
+        </div>
+        <button type="button" id="loginButton" class="btn-full">Iniciar Sesión</button>
+        <div class="forgot-password">
+            <a href="#">¿Olvidó su contraseña?</a>
+        </div>
+        
+        <div class="credentials-info">
+            <h3>Credenciales de Acceso (para demostración):</h3>
+            <p><strong>Apoderado:</strong> usuario: apoderado, contraseña: 123456</p>
+            <p><strong>Ejecutivo:</strong> usuario: ejecutivo, contraseña: 123456</p>
+        </div>
+    </div>
+</div>
+
+<!-- Layout Principal (Header + Sidebar + Content) -->
+<div id="mainLayout" style="display: none;">
+    <div class="header">
+        <div class="logo-header">On Tour</div>
+        <div class="user-info">
+            <span id="userDisplay">Usuario | Rol</span>
+            <button id="logoutButton">Cerrar Sesión</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="sidebar">
+            <ul class="sidebar-menu" id="mainMenu">
+                <!-- Menú dinámico según tipo de usuario -->
+            </ul>
+        </div>
+        
+        <div class="content">
+            <!-- Contenido dinámico según la vista seleccionada -->
+            <div id="viewContainer">
+                <!-- Dashboard View -->
+                <div id="dashboardView" class="view">
+                    <!-- Contenido cargado dinámicamente -->
+                </div>
+                
+                <!-- Contratos View (Ejecutivo) -->
+                <div id="contractsView" class="view">
+                    <!-- Contenido cargado dinámicamente -->
+                </div>
+                
+                <!-- Crear Contrato View (Ejecutivo) -->
+                <div id="createContractView" class="view">
+                    <!-- Contenido cargado dinámicamente -->
+                </div>
+                
+                <!-- Depósitos View (Ejecutivo) -->
+                <div id="depositsView" class="view">
+                    <!-- Contenido cargado dinámicamente -->
+                </div>
+                
+                <!-- Aportes View (Apoderado) -->
+                <div id="aportesView" class="view">
+                    <!-- Contenido cargado dinámicamente -->
+                </div>
+                
+                <!-- Documentos View (Apoderado) -->
+                <div id="documentsView" class="view">
+                    <!-- Contenido cargado dinámicamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
